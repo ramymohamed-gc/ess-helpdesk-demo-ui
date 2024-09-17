@@ -1,7 +1,8 @@
 body {
   margin: 0;
   background: url('@/assets/background.jpg') no-repeat center center fixed;
-  background-size: contain;
+  background-size: cover;
+  
   display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
@@ -18,16 +19,23 @@ main {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  border: 2px solid transparent;
+  padding: 1em 2em;  /* Increase padding for larger button */
+  font-size: 1.2em;  /* Increase font size */
   font-weight: 500;
   font-family: inherit;
-  background-color: #3f3e3e;
+  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
   color: white;
+  
+  position: absolute;  /* Absolute positioning */
+  top: 20px;           /* Position 20px from the top */
+  right: 180px;         /* Position 20px from the right */
+  width: auto;         /* Adjust width if needed */
+  height: auto;        /* Adjust height if needed */
 }
+
 button:hover {
   border-color: #646cff;
 }

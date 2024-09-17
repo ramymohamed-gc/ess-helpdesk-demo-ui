@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Todos from './components/Todos.vue'
+import LexChatbot from './components/LexChatbot.vue'
+
 import { Authenticator } from "@aws-amplify/ui-vue";
 import "@aws-amplify/ui-vue/styles.css";
 </script>
@@ -8,7 +9,7 @@ import "@aws-amplify/ui-vue/styles.css";
   <main>
     <authenticator>
       <template v-slot="{ signOut }">
-        <Todos />
+        <LexChatbot />
         <button @click="signOut">Sign Out</button>
       </template>
     </authenticator>
