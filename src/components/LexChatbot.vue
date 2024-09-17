@@ -98,6 +98,7 @@ onMounted(() => {
   font-family: 'Arial', sans-serif;
   color: white;
   font-size: 18px; /* Increase the base font size */
+  text-align: center;
   
 }
 
